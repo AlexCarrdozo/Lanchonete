@@ -457,3 +457,43 @@ footer {
 .modal-content::-webkit-scrollbar-track {background: #f1f1f1; border-radius: 4px;}
 .modal-content::-webkit-scrollbar-thumb {background: var(--cor-primaria); border-radius: 4px;}
 .modal-content::-webkit-scrollbar-thumb:hover {background: var(--cor-hover);}
+
+/* Seção de Contato */
+#contato.categoria {
+    text-align: center;
+    padding: 2rem;
+}
+
+#contato .item {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--cor-branco);
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+#contato .item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#contato .item-info h3 {
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #contato .item {
+        padding: 1.5rem;
+    }
+    
+    #contato .item-info h3 {
+        font-size: 1.1rem;
+    }
+}
