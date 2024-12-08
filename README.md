@@ -1,2 +1,2 @@
 # Lanchonete
-Desenvolvi uma página web para uma lanchonete, utilizando as linguagens HTML, CSS e JavaScript.
+Desenvolvi uma página web para uma lanchonete, utilizando as linguagens HTML, CSS e JavaScript. O projeto conta com uma interface intuitiva e responsiva, proporcionando uma experiência de navegação prática e agradável para o usuário. As funcionalidades interativas foram implementadas com JavaScript, enquanto o design visual foi cuidadosamente estruturado com HTML e estilizado com CSS, garantindo uma apresentação atraente e moderna.
