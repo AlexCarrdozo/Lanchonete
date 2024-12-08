@@ -1,0 +1,459 @@
+:root {
+    --cor-primaria: #ff6b6b;
+    --cor-hover: #ff5252;
+    --cor-sucesso: #4CAF50;
+    --cor-texto: #333;
+    --cor-branco: white;
+    --sombra-padrao: 0 2px 5px rgba(0, 0, 0, 0.2);
+    --transicao: 0.3s ease;
+    --borda-radius: 10px;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+
+body {
+    background: url('https://static.vecteezy.com/system/resources/previews/002/076/791/large_2x/rustic-wood-texture-free-photo.jpg') center/cover fixed;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: none !important;
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 2rem;
+}
+
+.logo-container {display: flex; justify-content: center; margin-bottom: 1rem;}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--sombra-padrao);
+    background-color: var(--cor-branco);
+    transition: transform var(--transicao), box-shadow var(--transicao);
+    overflow: hidden;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.logo-img {width: 100%; height: 100%; object-fit: cover;}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu */
+.menu-lateral {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: var(--cor-branco);
+    box-shadow: var(--sombra-padrao);
+    transition: all var(--transicao);
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.menu-lateral.active {left: 0; transform: translateX(0);}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--sombra-padrao);
+    transition: background-color var(--transicao);
+    border: none;
+    padding: 0;
+}
+
+.menu-toggle:hover {background-color: var(--cor-hover);}
+.menu-toggle i {font-size: 24px; pointer-events: none;}
+
+.menu-items {
+    list-style: none;
+    padding: 70px 0 0;
+    margin: 0;
+}
+
+.menu-items li {margin: 0.5rem 0;}
+
+.menu-items a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    transition: background-color var(--transicao);
+}
+
+.menu-items a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-items a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+/* Cardápio */
+.cardapio {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: var(--borda-radius);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.categoria {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.categoria h2 {
+    color: #000;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+    grid-column: 1 / -1;
+}
+
+#lanches, #bebidas, #sobremesas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Items */
+.item {
+    background: var(--cor-branco);
+    border: 1px solid #ddd;
+    border-radius: var(--borda-radius);
+    overflow: hidden;
+    transition: transform var(--transicao), box-shadow var(--transicao);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.item-imagem {
+    width: 100%;
+    height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+
+.item-info {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.item-info h3 {color: var(--cor-texto); margin-bottom: 0.5rem;}
+.item-info p {color: #666; font-size: 0.9rem;}
+
+.item-preco {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    text-align: right;
+}
+
+.item-preco p {
+    color: #910707;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Carrinho */
+.carrinho-icone {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--sombra-padrao);
+    transition: background-color var(--transicao);
+}
+
+.carrinho-icone:hover {background-color: var(--cor-hover);}
+
+#carrinho-contador {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--cor-sucesso);
+    color: var(--cor-branco);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.carrinho {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    background-color: var(--cor-branco);
+    padding: 1.5rem;
+    border-radius: var(--borda-radius);
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    display: none;
+    z-index: 1000;
+}
+
+/* Modal e Imagens */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--cor-branco);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal-imagem {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.modal-opcoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.opcao-bebida {
+    background: var(--cor-branco);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.opcao-bebida:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.opcao-bebida img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.modal-imagem-grande {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+/* Botões e Elementos de Fechamento */
+.btn-adicionar, 
+.btn-confirmar, 
+.btn-ok,
+.btn-finalizar {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all var(--transicao);
+    color: var(--cor-branco);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-adicionar {background-color: var(--cor-primaria);}
+
+.btn-adicionar:hover {
+    background-color: var(--cor-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.btn-confirmar,
+.btn-ok,
+.btn-finalizar {
+    background-color: var(--cor-sucesso);
+    margin-top: 10px;
+}
+
+.btn-confirmar:hover,
+.btn-ok:hover,
+.btn-finalizar:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Botão Fechar (X) */
+.modal-fechar,
+.carrinho-fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transicao);
+    border-radius: 50%;
+    padding: 0;
+    line-height: 1;
+}
+
+.modal-fechar:hover,
+.carrinho-fechar:hover {
+    color: #ff0000;
+    transform: scale(1.1) rotate(90deg);
+    background-color: rgba(255,0,0,0.1);
+}
+
+/* Formulário */
+.form-pedido {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.form-grupo {margin-bottom: 15px;}
+.form-grupo label {display: block; margin-bottom: 5px; font-weight: bold;}
+.form-grupo input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-grupo input:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.3);
+}
+
+/* Mensagens e Animações */
+.mensagem {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: var(--cor-sucesso);
+    color: var(--cor-branco);
+    padding: 1rem 1.5rem;
+    border-radius: var(--borda-radius);
+    display: none;
+    z-index: 2000;
+    animation: slideIn 0.3s ease-in-out;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+@keyframes slideIn {
+    from {transform: translateX(100%); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+}
+
+/* Footer */
+footer {
+    background: transparent;
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #lanches, #bebidas, #sobremesas, .modal-opcoes {grid-template-columns: 1fr;}
+    .menu-lateral {width: 100%; left: -100%;}
+    .carrinho {width: 90%; right: 5%; left: 5%;}
+    .modal-content {width: 95%; padding: 1.5rem;}
+    .item-imagem {height: 150px !important;}
+    .modal-imagem {height: 180px;}
+    .opcao-bebida img {height: 100px;}
+    .modal-imagem-grande {max-width: 250px; max-height: 250px;}
+}
+
+/* Scrollbar */
+.modal-content::-webkit-scrollbar {width: 8px;}
+.modal-content::-webkit-scrollbar-track {background: #f1f1f1; border-radius: 4px;}
+.modal-content::-webkit-scrollbar-thumb {background: var(--cor-primaria); border-radius: 4px;}
+.modal-content::-webkit-scrollbar-thumb:hover {background: var(--cor-hover);}
