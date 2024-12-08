@@ -1,6 +1,6 @@
 :root {
-    --cor-primaria: #ff6b6b;
-    --cor-hover: #ff5252;
+    --cor-primaria: #C70039;
+    --cor-hover: #C70039;
     --cor-sucesso: #4CAF50;
     --cor-texto: #333;
     --cor-branco: white;
@@ -370,7 +370,7 @@ header p {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #ff4444;
+    color: #C70039;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -382,7 +382,7 @@ header p {
 
 .modal-fechar:hover,
 .carrinho-fechar:hover {
-    color: #ff0000;
+    color: #C70039;
     transform: scale(1.1) rotate(90deg);
     background-color: rgba(255,0,0,0.1);
 }
