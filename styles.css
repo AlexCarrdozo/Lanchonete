@@ -460,40 +460,169 @@ footer {
 
 /* Seção de Contato */
 #contato.categoria {
-    text-align: center;
     padding: 2rem;
+    text-align: center;
 }
 
-#contato .item {
-    max-width: 600px;
-    margin: 0 auto;
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.contato-card {
     background: var(--cor-branco);
     padding: 2rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius: var(--borda-radius);
+    box-shadow: var(--sombra-padrao);
+    min-width: 200px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
-#contato .item-info {
+.contato-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contato-card i {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.contato-card h3 {
+    color: var(--cor-texto);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contato-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Responsividade para contatos */
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .contato-card {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+/* Status do Pedido */
+.numero-pedido {
+    font-size: 1.2em;
+    color: var(--cor-primaria);
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.status-pedido {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.status-timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.status-timeline::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    right: 50px;
+    height: 2px;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+.status-item {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     align-items: center;
+    position: relative;
+    z-index: 2;
+    color: #999;
+    transition: color 0.3s ease;
 }
 
-#contato .item-info h3 {
-    color: var(--cor-texto);
-    font-size: 1.2rem;
+.status-item i {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: 2px solid #ddd;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    #contato .item {
-        padding: 1.5rem;
-    }
-    
-    #contato .item-info h3 {
-        font-size: 1.1rem;
-    }
+.status-item p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.status-item.active {
+    color: var(--cor-sucesso);
+}
+
+.status-item.active i {
+    border-color: var(--cor-sucesso);
+    background-color: var(--cor-sucesso);
+    color: white;
+}
+
+/* Estilos para o container do PIX */
+#pixContainer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.qr-code-container {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.qr-code {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.chave-pix {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    font-size: 0.9em;
 }
