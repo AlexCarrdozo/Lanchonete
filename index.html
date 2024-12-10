@@ -51,11 +51,12 @@
             <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
         </ul>
     </nav>
+    <!-- Cardapio -->
     <main class="cardapio">
         <section id="lanches" class="categoria">
             <h2>Lanches</h2>
             <div class="item" onclick="abrirModal('X-Burguer', 'Delicioso hambúrguer com queijo derretido, alface fresca e tomate suculento. Preparado com ingredientes selecionados para garantir o melhor sabor.', 18.90, 'https://1.bp.blogspot.com/-criC4J9Jcls/X1a5ql1z5wI/AAAAAAAA2Zc/17ZktEJF50I9ioYVAPq36W7FO4j1AhfkQCLcBGAsYHQ/w1200-h630-p-k-no-nu/sanduiche-pc-ppg.jpg')">
-                <img src="https://1.bp.blogspot.com/-criC4J9Jcls/X1a5ql1z5wI/AAAAAAAA2Zc/17ZktEJF50I9ioYVAPq36W7FO4j1AhfkQCLcBGAsYHQ/w1200-h630-p-k-no-nu/sanduiche-pc-ppg.jpg" alt="X-Burguer" class="item-imagem">
+                <img src="X-Burguer.jpg" alt="X-Burguer" class="item-imagem">
                 <div class="item-info">
                     <h3>X-Burguer</h3>
                     <p>Pão, hambúrguer, queijo, alface e tomate</p>
@@ -68,7 +69,7 @@
                 </div>
             </div>
             <div class="item" onclick="abrirModal('X-Bacon', 'Hambúrguer especial com bacon crocante, queijo derretido e vegetais frescos. Uma explosão de sabores em cada mordida.', 22.90, 'https://embutidosbonatti.ind.br/temp/BIN_57_V9Fb0BwK.jpg')">
-                <img src="https://embutidosbonatti.ind.br/temp/BIN_57_V9Fb0BwK.jpg" alt="X-Bacon" class="item-imagem">
+                <img src="X-Bacon.jpg" alt="X-Bacon" class="item-imagem">
                 <div class="item-info">
                     <h3>X-Bacon</h3>
                     <p>Pão, hambúrguer, queijo, bacon, alface e tomate</p>
@@ -82,11 +83,11 @@
             </div>
                 <!-- Coxinha -->
                 <div class="item" onclick="abrirModalLanches('Coxinha', [
-                    {nome: 'Coxinha de Frango', preco: 5.00, imagem: 'https://www.comidaereceitas.com.br/wp-content/uploads/2022/11/coxinha.jpg', descricao: 'Coxinha tradicional de frango com massa crocante'},
-                    {nome: 'Coxinha de Frango com Catupiry', preco: 6.00, imagem: 'https://ricotaemaricota.com/wp-content/uploads/2022/06/60736797_1562498430550440_3836368623916548096_n.jpg', descricao: 'Coxinha de frango com catupiry cremoso'},
-                    {nome: 'Coxinha de Frango com Cream Cheese', preco: 6.00, imagem: 'https://nutricozinha.com.br/wp-content/uploads/2020/07/965.png', descricao: 'Coxinha de frango com cream cheese'}
+                    {nome: 'Coxinha de Frango', preco: 5.00, imagem: 'coxinha frango.jpg', descricao: 'Coxinha tradicional de frango com massa crocante'},
+                    {nome: 'Coxinha de Frango com Catupiry', preco: 6.00, imagem: 'coxinha catupiry.jpg', descricao: 'Coxinha de frango com catupiry cremoso'},
+                    {nome: 'Coxinha de Frango com Cream Cheese', preco: 6.00, imagem: 'coxinha creem.png', descricao: 'Coxinha de frango com cream cheese'}
                 ])">
-                    <img src="https://cdn0.tudoreceitas.com/pt/posts/1/9/1/coxinha_simples_191_orig.jpg" alt="Coxinha" class="item-imagem">
+                    <img src="Coxinha.jpg" alt="Coxinha" class="item-imagem">
                     <div class="item-info">
                         <h3>Coxinha</h3>
                         <p>Diversos sabores</p>
@@ -98,11 +99,11 @@
             
                 <!-- Cento de Salgados -->
                 <div class="item" onclick="abrirModalLanches('Cento de Salgados', [
-                    {nome: '50 Salgados', preco: 50.00, imagem: 'https://www.chovenegocio.com.br/imagens/anuncios/230122102422/fabrica-de-salgadinhos-delivery-3206-3507.jpg', descricao: 'Mix com enrroladinho de salcicha, bolinha de queijo e risole'},
-                    {nome: 'Cento Tradicional', preco: 100.00, imagem: 'https://panificadorabonanza.com.br/wp-content/uploads/2022/07/IMG_8225-1536x1024.jpg', descricao: 'Mix com esfiha, pastel e coxinha especial'},
-                    {nome: 'Cento Festa', preco: 160.00, imagem: 'https://soupetropolis.com/wp-content/uploads/2020/07/sweetwish.jpg', descricao: 'Mix completo com todos os salgados da casa'}
+                    {nome: '50 Salgados', preco: 50.00, imagem: '50 salgados.jpg', descricao: 'Mix com enrroladinho de salcicha, bolinha de queijo e risole'},
+                    {nome: 'Cento Tradicional', preco: 100.00, imagem: 'cento tradicional.jpg', descricao: 'Mix com esfiha, pastel e coxinha especial'},
+                    {nome: 'Cento Festa', preco: 160.00, imagem: 'cento festa.jpg', descricao: 'Mix completo com todos os salgados da casa'}
                 ])">
-                    <img src="https://i.ytimg.com/vi/H-LM9rfodv8/maxresdefault.jpg" class="item-imagem">
+                    <img src="cento salgados.jpg" class="item-imagem">
                     <div class="item-info">
                         <h3>Cento de Salgados</h3>
                         <p>Diversos tipos</p>
@@ -114,11 +115,11 @@
             
                 <!-- Empada -->
                 <div class="item" onclick="abrirModalLanches('Empada', [
-                    {nome: 'Empada de Carne de Sol', preco: 7.00, imagem: 'https://s2.glbimg.com/wVJGB0sxXFKNNcsGIKdxfIUmvSI=/1200x/smart/filters:cover():strip_icc()/s.glbimg.com/po/rc/media/2012/06/13/15/16/31/358/liquidificadoir_3250.jpg', descricao: 'Empada recheada com carne de sol desfiada'},
-                    {nome: 'Empada de Frango', preco: 6.00, imagem: 'https://zayaflour.com/wp-content/uploads/2021/06/209041939_332096688532498_4563438401343223032_n-1024x1024.jpg', descricao: 'Empada tradicional de frango com milho'},
-                    {nome: 'Empada de Palmito', preco: 6.50, imagem: 'https://receitasmagicas.net/wp-content/uploads/2022/05/empadinhas-de-palmito.jpg', descricao: 'Empada vegetariana de palmito'}
+                    {nome: 'Empada de Carne de Sol', preco: 7.00, imagem: 'empada carne.jpg', descricao: 'Empada recheada com carne de sol desfiada'},
+                    {nome: 'Empada de Frango', preco: 6.00, imagem: 'empada frango.jpg', descricao: 'Empada tradicional de frango com milho'},
+                    {nome: 'Empada de Palmito', preco: 6.50, imagem: 'empada palmito.jpg', descricao: 'Empada vegetariana de palmito'}
                 ])">
-                    <img src="https://1.bp.blogspot.com/-zon3_0LsfnQ/XipgrBeB7ZI/AAAAAAAAAiU/UtjQo7u2Ivgrd3qcqvPE_hTuqV25CPWTwCLcBGAsYHQ/w1200-h630-p-k-no-nu/receitas-de-empadas-para-vender.jpg">
+                    <img src="empada.jpg">
                     <div class="item-info">
                         <h3>Empada</h3>
                         <p>Diversos sabores</p>
@@ -130,11 +131,11 @@
             
                 <!-- Sanduíche Natural -->
                 <div class="item" onclick="abrirModalLanches('Sanduíche Natural', [
-                    {nome: 'Natural de Frango', preco: 12.00, imagem: 'https://receitafaceis.net/wp-content/uploads/2022/10/Sanduiche-natural-de-frango-opcao-perfeita-para-o-lanche.webp', descricao: 'Frango desfiado, cenoura, alface e maionese'},
-                    {nome: 'Natural de Atum', preco: 12.00, imagem: 'https://assets.unileversolutions.com/recipes-v2/99461.jpg', descricao: 'Atum, cenoura, alface e maionese'},
-                    {nome: 'Natural Vegetariano', preco: 11.00, imagem: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkoNbV9SkABi_6ZnMjxIiqKDdvyI7hNpewpmvezY_WAHgIa18cSYI9-iEFKPEA5Gab_eIEXjoWZX1hid6SsGLsU57IsfdVzT3xi7oBIarwUFLMJ4R4D7vfCvKh_UG5dIC1PNa_MSplPVdvO0VLqeIVmFTd82YZuKExqtBk8wF6Yv79NBRbvTzsXFed/w1200/receita-de-sandu%C3%ADche-natural-light.jpg', descricao: 'Mix de legumes, ricota e patê de cenoura'}
+                    {nome: 'Natural de Frango', preco: 12.00, imagem: 'sanduiche frango.webp', descricao: 'Frango desfiado, cenoura, alface e maionese'},
+                    {nome: 'Natural de Atum', preco: 12.00, imagem: 'sanduiche atum.avif', descricao: 'Atum, cenoura, alface e maionese'},
+                    {nome: 'Natural Vegetariano', preco: 11.00, imagem: 'sanduiche vegetariano.jpg', descricao: 'Mix de legumes, ricota e patê de cenoura'}
                 ])">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkoNbV9SkABi_6ZnMjxIiqKDdvyI7hNpewpmvezY_WAHgIa18cSYI9-iEFKPEA5Gab_eIEXjoWZX1hid6SsGLsU57IsfdVzT3xi7oBIarwUFLMJ4R4D7vfCvKh_UG5dIC1PNa_MSplPVdvO0VLqeIVmFTd82YZuKExqtBk8wF6Yv79NBRbvTzsXFed/w1200/receita-de-sandu%C3%ADche-natural-light.jpg" alt="Sanduíche Natural" class="item-imagem">
+                    <img src="sanduiche.jpg" alt="Sanduíche Natural" class="item-imagem">
                     <div class="item-info">
                         <h3>Sanduíche Natural</h3>
                         <p>Opções saudáveis</p>
@@ -146,11 +147,11 @@
             
                 <!-- Misto Quente -->
                 <div class="item" onclick="abrirModalLanches('Misto Quente', [
-                    {nome: 'Misto Tradicional', preco: 8.00, imagem: 'https://www.minhareceita.com.br/app/uploads/2022/10/misto-quente.jpg', descricao: 'Queijo e presunto no pão francês'},
-                    {nome: 'Misto Especial', preco: 10.00, imagem: 'https://2.bp.blogspot.com/-n0BRuB8rVnM/Wwv2pb63PcI/AAAAAAAAM_E/gYTFlGH39zg95nDYtdwPteKhFc8vocccgCLcBGAs/s1600/misto-quente-receita-1.jpeg', descricao: 'Queijo, presunto e oregano no pão integral'},
-                    {nome: 'Misto Duplo', preco: 12.00, imagem: 'https://www.guiadasmulheres.com.br/wp-content/uploads/2017/07/image001-70.jpg', descricao: 'Duplo queijo e presunto no pão francês'}
+                    {nome: 'Misto Tradicional', preco: 8.00, imagem: 'misto 1.jpg', descricao: 'Queijo e presunto no pão francês'},
+                    {nome: 'Misto Especial', preco: 10.00, imagem: 'misto 2.jpeg', descricao: 'Queijo, presunto e oregano no pão integral'},
+                    {nome: 'Misto Duplo', preco: 12.00, imagem: 'misto 3.jpg', descricao: 'Duplo queijo e presunto no pão francês'}
                 ])">
-                    <img src="https://www.sabornamesa.com.br/media/k2/items/cache/f863e4fb1b47b206b2276d9b70a5b183_M.jpg" alt="Misto Quente" class="item-imagem">
+                    <img src="misto.jpg" alt="Misto Quente" class="item-imagem">
                     <div class="item-info">
                         <h3>Misto Quente</h3>
                         <p>Diversos tipos</p>
@@ -162,11 +163,11 @@
             
                 <!-- Tapioca -->
                 <div class="item" onclick="abrirModalLanches('Tapioca', [
-                    {nome: 'Tapioca de Queijo', preco: 8.00, imagem: 'https://conexaominasrio.com.br/wp-content/uploads/2020/08/24-1-1024x853.jpg', descricao: 'Tapioca recheada com queijo coalho'},
-                    {nome: 'Tapioca de Frango', preco: 10.00, imagem: 'https://www.debemcomacomida.com.br/wp-content/uploads/2021/05/frango-tapioca-com-catupiry_314084-98.jpg', descricao: 'Tapioca recheada com frango desfiado e queijo'},
-                    {nome: 'Tapioca Doce', preco: 9.00, imagem: 'https://www.receiteria.com.br/wp-content/uploads/receitas-de-tapioca-doce-1.jpg', descricao: 'Tapioca de morango e chocolate'}
+                    {nome: 'Tapioca de Queijo', preco: 8.00, imagem: 'tapioca 1.jpg', descricao: 'Tapioca recheada com queijo coalho'},
+                    {nome: 'Tapioca de Frango', preco: 10.00, imagem: 'tapioca 2.jpg', descricao: 'Tapioca recheada com frango desfiado e queijo'},
+                    {nome: 'Tapioca Doce', preco: 9.00, imagem: 'tapioca.webp', descricao: 'Tapioca de morango e chocolate'}
                 ])">
-                    <img src="https://saude.abril.com.br/wp-content/uploads/2016/09/o-que-e-que-a-tapioca-tem.jpg?quality=70&strip=all&resize=360" alt="Tapioca" class="item-imagem">
+                    <img src="tapioca.webp" alt="Tapioca" class="item-imagem">
                     <div class="item-info">
                         <h3>Tapioca</h3>
                         <p>Salgadas e doces</p>
@@ -182,12 +183,12 @@
     
     <!-- Refrigerantes -->
     <div class="item" onclick="abrirModalBebidas('Refrigerante', [
-        {nome: 'Coca-Cola', preco: 5.00, imagem: 'https://thumbs.dreamstime.com/b/garrafa-de-cocacola-em-gelo-triturado-poznan-pol-maio-refrigerante-gaseificado-fabricado-pela-empresa-com-sede-atlanta-georgia-usa-185908468.jpg', descricao: 'Coca-Cola Original Lata 350ml'},
-        {nome: 'Guaraná', preco: 5.00, imagem: 'https://majoricario.com.br/site/wp-content/uploads/2021/02/Guarana.png', descricao: 'Guaraná Antarctica Lata 350ml'},
-        {nome: 'Sprite', preco: 5.00, imagem: 'https://st.depositphotos.com/1000647/4654/i/450/depositphotos_46544531-stock-photo-soft-drink-sprite.jpg', descricao: 'Sprite Lata 350ml'},
-        {nome: 'Fanta', preco: 5.00, imagem: 'https://static.paodeacucar.com/img/uploads/1/656/25023656.jpg', descricao: 'Fanta Laranja Lata 350ml'}
+        {nome: 'Coca-Cola', preco: 5.00, imagem: 'refri 1.webp', descricao: 'Coca-Cola Original Lata 350ml'},
+        {nome: 'Guaraná', preco: 5.00, imagem: 'refri 2.png', descricao: 'Guaraná Antarctica Lata 350ml'},
+        {nome: 'Sprite', preco: 5.00, imagem: 'refri 3.jpg', descricao: 'Sprite Lata 350ml'},
+        {nome: 'Fanta', preco: 5.00, imagem: 'refri 4.webp', descricao: 'Fanta Laranja Lata 350ml'}
     ])">
-        <img src="https://www.manollopizzaria.com.br/wp-content/uploads/2019/01/38-540x4801.png" alt="Refrigerante" class="item-imagem">
+        <img src="refri.png" alt="Refrigerante" class="item-imagem">
         <div class="item-info">
             <h3>Refrigerante</h3>
             <p>Lata 350ml</p>
@@ -199,12 +200,12 @@
 
     <!-- Sucos -->
     <div class="item" onclick="abrirModalBebidas('Suco Natural', [
-        {nome: 'Suco de Laranja', preco: 8.00, imagem: 'https://villalvafrutas.com.br/wp-content/uploads/2018/01/8296146_ww.jpg', descricao: 'Suco natural de laranja espremida na hora'},
-        {nome: 'Suco de Morango', preco: 8.00, imagem: 'https://cdn.abrahao.com.br/base/dca/b23/5bb/suco-natural-morango.jpg', descricao: 'Suco de morango natural com pedaços da fruta'},
-        {nome: 'Suco de Abacaxi', preco: 8.00, imagem: 'https://pesqueiroestancia.com.br/wp-content/uploads/2020/12/Receita-de-Suco-de-abacaxi-Tudo-Gostoso.jpg', descricao: 'Suco de abacaxi natural com hortelã'},
-        {nome: 'Suco de Maracujá', preco: 8.00, imagem: 'https://www.mundoboaforma.com.br/wp-content/uploads/2021/06/Suco-calmante-1024x546.jpg', descricao: 'Suco de maracujá natural'}
+        {nome: 'Suco de Laranja', preco: 8.00, imagem: 'refri 1.jpg', descricao: 'Suco natural de laranja espremida na hora'},
+        {nome: 'Suco de Morango', preco: 8.00, imagem: 'refri 2.jpg', descricao: 'Suco de morango natural com pedaços da fruta'},
+        {nome: 'Suco de Abacaxi', preco: 8.00, imagem: 'refri 3.jpg', descricao: 'Suco de abacaxi natural com hortelã'},
+        {nome: 'Suco de Maracujá', preco: 8.00, imagem: 'refri 4.webp', descricao: 'Suco de maracujá natural'}
     ])">
-        <img src="https://emagrecersemregimes.com/wp-content/uploads/2016/07/4-otimas-receitas-de-sucos.jpg" alt="Suco Natural" class="item-imagem">
+        <img src="suco.jpg" alt="Suco Natural" class="item-imagem">
         <div class="item-info">
             <h3>Suco Natural</h3>
             <p>Copo 400ml</p>
@@ -216,10 +217,10 @@
 
     <!-- Água -->
     <div class="item" onclick="abrirModalBebidas('Água', [
-        {nome: 'Água Mineral', preco: 3.00, imagem: 'https://www.varanda.com.br/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/a/g/agua-mineral-crystal-500ml-7894900530001.jpg', descricao: 'Água mineral sem gás 500ml'},
-        {nome: 'Água com Gás', preco: 4.00, imagem: 'https://ibassets.com.br/ib.item.image.large/l-837005f8a02049e58cb3ec8fdaef341d.jpeg', descricao: 'Água mineral com gás 500ml'}
+        {nome: 'Água Mineral', preco: 3.00, imagem: 'agua 1.jpg', descricao: 'Água mineral sem gás 500ml'},
+        {nome: 'Água com Gás', preco: 4.00, imagem: 'agua 2.jpeg', descricao: 'Água mineral com gás 500ml'}
     ])">
-        <img src="https://www.fmdos.cl/wp-content/uploads/2017/06/agua-mineral-2.jpg" alt="Água" class="item-imagem">
+        <img src="agua.jpg" alt="Água" class="item-imagem">
         <div class="item-info">
             <h3>Água Mineral</h3>
             <p>Com e sem gás</p>
@@ -231,11 +232,11 @@
 
     <!-- Café -->
     <div class="item" onclick="abrirModalBebidas('Café', [
-        {nome: 'Café Expresso', preco: 4.00, imagem: 'https://cdn.vidaativa.pt/uploads/2020/07/cafe-expresso-cafe-soluvel.png', descricao: 'Café expresso tradicional'},
-        {nome: 'Cappuccino', preco: 7.00, imagem: 'http://www.haushaltstipps.net/wp-content/uploads/cappucino-selber-machen.jpg', descricao: 'Cappuccino cremoso'},
-        {nome: 'Café com Leite', preco: 5.00, imagem: 'https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Latte-Macchiato.jpg', descricao: 'Café com leite tradicional'}
+        {nome: 'Café Expresso', preco: 4.00, imagem: 'cafe 1.png', descricao: 'Café expresso tradicional'},
+        {nome: 'Cappuccino', preco: 7.00, imagem: 'cafe 2.jpg', descricao: 'Cappuccino cremoso'},
+        {nome: 'Café com Leite', preco: 5.00, imagem: 'cafe 3.avif', descricao: 'Café com leite tradicional'}
     ])">
-        <img src="https://cdn.colombia.com/sdi/2019/08/05/como-preparar-cafe-colombiano-758887.jpg" alt="Café" class="item-imagem">
+        <img src="cafe.jpg" alt="Café" class="item-imagem">
         <div class="item-info">
             <h3>Café</h3>
             <p>Diversas opções</p>
@@ -252,10 +253,10 @@
     
     <!-- Pudim -->
     <div class="item" onclick="abrirModalSobremesas('Pudim', [
-        {nome: 'Pudim de Leite', preco: 8.90, imagem: 'https://assets.unileversolutions.com/recipes-v2/236947.jpg', descricao: 'Delicioso pudim de leite condensado com calda caramelizada'},
-        {nome: 'Pudim de Chocolate', preco: 9.90, imagem: 'https://www.guiadasemana.com.br/contentFiles/image/2019/10/FEA/64494_shutterstock-353870606.jpg', descricao :' Pudim de chocolate com cereja'}, 
+        {nome: 'Pudim de Leite', preco: 8.90, imagem: 'pudim.avif', descricao: 'Delicioso pudim de leite condensado com calda caramelizada'},
+        {nome: 'Pudim de Chocolate', preco: 9.90, imagem: 'pudim 2.jpg', descricao :' Pudim de chocolate com cereja'}, 
     ])">
-        <img src="https://assets.unileversolutions.com/recipes-v2/236947.jpg" alt="Pudim" class="item-imagem">
+        <img src="pudim.avif" alt="Pudim" class="item-imagem">
         <div class="item-info">
             <h3>Pudim</h3>
             <p>Tradicional ou chocolate</p>
@@ -267,11 +268,11 @@
 
     <!-- Bolo -->
     <div class="item" onclick="abrirModalSobremesas('Bolo', [
-        {nome: 'Bolo de Chocolate', preco: 15.00, imagem: 'https://thumbs.dreamstime.com/b/fatia-de-bolo-chocolate-delicioso-sobre-o-branco-com-108476171.jpg', descricao: 'Fatia de bolo de chocolate'},
-        {nome: 'Bolo de Cenoura', preco: 7.00, imagem: 'http://www.dicasdemulher.com.br/wp-content/uploads/2015/05/bolo-de-cenoura-tradicional.jpg', descricao: 'Fatia de bolo de cenoura com cobertura'},
-        {nome: 'Bolo Red Velvet', preco: 17.00, imagem: 'https://i.ytimg.com/vi/LbJy6eax5-8/maxresdefault.jpg', descricao: 'Fatia de bolo Red Velvet'}
+        {nome: 'Bolo de Chocolate', preco: 15.00, imagem: 'bolo 1.jpg', descricao: 'Fatia de bolo de chocolate'},
+        {nome: 'Bolo de Cenoura', preco: 7.00, imagem: 'bolo 2.jpg.crdownload', descricao: 'Fatia de bolo de cenoura com cobertura'},
+        {nome: 'Bolo Red Velvet', preco: 17.00, imagem: 'bolo 3.jpg', descricao: 'Fatia de bolo Red Velvet'}
     ])">
-        <img src="https://tastebraga.com/wp-content/uploads/2017/10/Montalegrense-Tratada.jpg" alt="Bolo" class="item-imagem">
+        <img src="bolo.jpg" alt="Bolo" class="item-imagem">
         <div class="item-info">
             <h3>Bolos</h3>
             <p>Diversos sabores</p>
@@ -283,11 +284,11 @@
 
     <!-- Sorvete -->
     <div class="item" onclick="abrirModalSobremesas('Sorvete', [
-        {nome: 'Sorvete de Chocolate', preco: 6.00, imagem: 'https://www.sabornamesa.com.br/media/k2/items/cache/681ce4883e44e134adfdaa9762e2ced0_XL.jpg', descricao: 'Bola de sorvete de chocolate'},
-        {nome: 'Sorvete de Morango', preco: 6.00, imagem: 'https://img.cybercook.com.br/receitas/126/sorvete-de-morango-sem-acucar.jpeg', descricao: 'Bola de sorvete de morango'},
-        {nome: 'Sorvete de Creme', preco: 6.00, imagem: 'https://img.cybercook.com.br/receitas/808/sorvete-de-creme-vegano.jpeg', descricao: 'Bola de sorvete de creme'}
+        {nome: 'Sorvete de Chocolate', preco: 6.00, imagem: 'sorvetes 1.jpg', descricao: 'Bola de sorvete de chocolate'},
+        {nome: 'Sorvete de Morango', preco: 6.00, imagem: 'sorvetes 2.jpeg', descricao: 'Bola de sorvete de morango'},
+        {nome: 'Sorvete de Creme', preco: 6.00, imagem: 'sorvetes 3.jpeg', descricao: 'Bola de sorvete de creme'}
     ])">
-        <img src="https://polosulsc.com.br/wp-content/uploads/2018/03/Tr%C3%AAs-tipos-e-sabores-de-sorvete-diferentes-1.jpg" alt="Sorvete" class="item-imagem">
+        <img src="sorvetes.jpg" alt="Sorvete" class="item-imagem">
         <div class="item-info">
             <h3>Sorvetes</h3>
             <p>Diversos sabores</p>
@@ -299,11 +300,11 @@
 
     <!-- Açaí -->
     <div class="item" onclick="abrirModalSobremesas('Açaí', [
-        {nome: 'Açaí 300ml', preco: 12.00, imagem: 'https://www.pngkit.com/png/detail/351-3515515_copo-aai-png-copo-de-300ml-acai.png', descricao: 'Açaí com granola e banana'},
-        {nome: 'Açaí 500ml', preco: 23.00, imagem: 'https://img.freepik.com/fotos-premium/acai-brasileiro-congelado-em-copo-plastico-com-leite-condensado-banana-e-morango-fruta-da-amazonia_261158-1712.jpg', descricao: 'Açaí com granola, banana e leite condensado'},
-        {nome: 'Açaí Especial', preco: 28.00, imagem: 'https://speedy.uenicdn.com/c07642ee-0d6b-4329-8ceb-e95d39102c7e/c1024_a/image/upload/v1571154771/service_images/shutterstock_1237796125.jpg', descricao: 'Açaí com 600 ml de frutas variadas e complementos'}
+        {nome: 'Açaí 300ml', preco: 12.00, imagem: 'acai 1.png', descricao: 'Açaí com granola e banana'},
+        {nome: 'Açaí 500ml', preco: 23.00, imagem: 'acai 2.avif', descricao: 'Açaí com granola, banana e leite condensado'},
+        {nome: 'Açaí Especial', preco: 28.00, imagem: 'acai 3.webp', descricao: 'Açaí com 600 ml de frutas variadas e complementos'}
     ])">
-        <img src="https://www.alegretetudo.com.br/wp-content/uploads/2022/02/alegretetudo-acai-curiosidades-e-beneficios-acai-scaled.jpg" alt="Açaí" class="item-imagem">
+        <img src="acai.jpg" alt="Açaí" class="item-imagem">
         <div class="item-info">
             <h3>Açaí</h3>
             <p>Diversos tamanhos e complementos</p>
