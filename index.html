@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cyber Snacks</title>
-        <link rel="stylesheet" href="../Lanchonete/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <script src="../Lanchonete/script.js" defer></script>
+        <script src="script.js" defer></script>
     </head>
 <body>
     <div class="carrinho-icone" onclick="toggleCarrinho()">
@@ -30,7 +30,7 @@
     <header>
         <div class="logo-container">
             <div class="logo">
-                <img src="CyberSnacks.png" alt="Logo Lanchonete" class="logo-img">
+                <img src="Imagens/CyberSnacks.png" alt="Logo Lanchonete" class="logo-img">
             </div>
         </div>
         <h1>CYBER SNACKS</h1>
@@ -56,7 +56,7 @@
         <section id="lanches" class="categoria">
             <h2>Lanches</h2>
             <div class="item" onclick="abrirModal('X-Burguer', 'Delicioso hambúrguer com queijo derretido, alface fresca e tomate suculento. Preparado com ingredientes selecionados para garantir o melhor sabor.', 18.90, 'https://1.bp.blogspot.com/-criC4J9Jcls/X1a5ql1z5wI/AAAAAAAA2Zc/17ZktEJF50I9ioYVAPq36W7FO4j1AhfkQCLcBGAsYHQ/w1200-h630-p-k-no-nu/sanduiche-pc-ppg.jpg')">
-                <img src="X-Burguer.jpg" alt="X-Burguer" class="item-imagem">
+                <img src="Imagens/X-Burguer.jpg" alt="X-Burguer" class="item-imagem">
                 <div class="item-info">
                     <h3>X-Burguer</h3>
                     <p>Pão, hambúrguer, queijo, alface e tomate</p>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="item" onclick="abrirModal('X-Bacon', 'Hambúrguer especial com bacon crocante, queijo derretido e vegetais frescos. Uma explosão de sabores em cada mordida.', 22.90, 'https://embutidosbonatti.ind.br/temp/BIN_57_V9Fb0BwK.jpg')">
-                <img src="X-Bacon.jpg" alt="X-Bacon" class="item-imagem">
+                <img src="Imagens/X-Bacon.jpg" alt="X-Bacon" class="item-imagem">
                 <div class="item-info">
                     <h3>X-Bacon</h3>
                     <p>Pão, hambúrguer, queijo, bacon, alface e tomate</p>
@@ -83,11 +83,11 @@
             </div>
                 <!-- Coxinha -->
                 <div class="item" onclick="abrirModalLanches('Coxinha', [
-                    {nome: 'Coxinha de Frango', preco: 5.00, imagem: 'coxinha frango.jpg', descricao: 'Coxinha tradicional de frango com massa crocante'},
-                    {nome: 'Coxinha de Frango com Catupiry', preco: 6.00, imagem: 'coxinha catupiry.jpg', descricao: 'Coxinha de frango com catupiry cremoso'},
-                    {nome: 'Coxinha de Frango com Cream Cheese', preco: 6.00, imagem: 'coxinha creem.png', descricao: 'Coxinha de frango com cream cheese'}
+                    {nome: 'Coxinha de Frango', preco: 5.00, imagem: 'Imagens/coxinha frango.jpg', descricao: 'Coxinha tradicional de frango com massa crocante'},
+                    {nome: 'Coxinha de Frango com Catupiry', preco: 6.00, imagem: 'Imagens/coxinha catupiry.jpg', descricao: 'Coxinha de frango com catupiry cremoso'},
+                    {nome: 'Coxinha de Frango com Cream Cheese', preco: 6.00, imagem: 'Imagens/coxinha creem.png', descricao: 'Coxinha de frango com cream cheese'}
                 ])">
-                    <img src="Coxinha.jpg" alt="Coxinha" class="item-imagem">
+                    <img src="Imagens/Coxinha.jpg" alt="Coxinha" class="item-imagem">
                     <div class="item-info">
                         <h3>Coxinha</h3>
                         <p>Diversos sabores</p>
@@ -99,11 +99,11 @@
             
                 <!-- Cento de Salgados -->
                 <div class="item" onclick="abrirModalLanches('Cento de Salgados', [
-                    {nome: '50 Salgados', preco: 50.00, imagem: '50 salgados.jpg', descricao: 'Mix com enrroladinho de salcicha, bolinha de queijo e risole'},
-                    {nome: 'Cento Tradicional', preco: 100.00, imagem: 'cento tradicional.jpg', descricao: 'Mix com esfiha, pastel e coxinha especial'},
-                    {nome: 'Cento Festa', preco: 160.00, imagem: 'cento festa.jpg', descricao: 'Mix completo com todos os salgados da casa'}
+                    {nome: '50 Salgados', preco: 50.00, imagem: 'Imagens/50 salgados.jpg', descricao: 'Mix com enrroladinho de salcicha, bolinha de queijo e risole'},
+                    {nome: 'Cento Tradicional', preco: 100.00, imagem: 'Imagens/cento tradicional.jpg', descricao: 'Mix com esfiha, pastel e coxinha especial'},
+                    {nome: 'Cento Festa', preco: 160.00, imagem: 'Imagens/cento festa.jpg', descricao: 'Mix completo com todos os salgados da casa'}
                 ])">
-                    <img src="cento salgados.jpg" class="item-imagem">
+                    <img src="Imagens/cento salgados.jpg" class="item-imagem">
                     <div class="item-info">
                         <h3>Cento de Salgados</h3>
                         <p>Diversos tipos</p>
@@ -115,11 +115,11 @@
             
                 <!-- Empada -->
                 <div class="item" onclick="abrirModalLanches('Empada', [
-                    {nome: 'Empada de Carne de Sol', preco: 7.00, imagem: 'empada carne.webp', descricao: 'Empada recheada com carne de sol desfiada'},
-                    {nome: 'Empada de Frango', preco: 6.00, imagem: 'empada frango.jpg', descricao: 'Empada tradicional de frango com milho'},
-                    {nome: 'Empada de Palmito', preco: 6.50, imagem: 'empadinhas palmito.jpg', descricao: 'Empada vegetariana de palmito'}
+                    {nome: 'Empada de Carne de Sol', preco: 7.00, imagem: 'Imagens/empada carne.webp', descricao: 'Empada recheada com carne de sol desfiada'},
+                    {nome: 'Empada de Frango', preco: 6.00, imagem: 'Imagens/empada frango.jpg', descricao: 'Empada tradicional de frango com milho'},
+                    {nome: 'Empada de Palmito', preco: 6.50, imagem: 'Imagens/empadinhas palmito.jpg', descricao: 'Empada vegetariana de palmito'}
                 ])">
-                    <img src="empada.jpg">
+                    <img src="Imagens/empada.jpg">
                     <div class="item-info">
                         <h3>Empada</h3>
                         <p>Diversos sabores</p>
@@ -131,11 +131,11 @@
             
                 <!-- Sanduíche Natural -->
                 <div class="item" onclick="abrirModalLanches('Sanduíche Natural', [
-                    {nome: 'Natural de Frango', preco: 12.00, imagem: 'sanduiche frango.webp', descricao: 'Frango desfiado, cenoura, alface e maionese'},
-                    {nome: 'Natural de Atum', preco: 12.00, imagem: 'sanduiche atum.avif', descricao: 'Atum, cenoura, alface e maionese'},
-                    {nome: 'Natural Vegetariano', preco: 11.00, imagem: 'sanduiche vegetariano.jpg', descricao: 'Mix de legumes, ricota e patê de cenoura'}
+                    {nome: 'Natural de Frango', preco: 12.00, imagem: 'Imagens/sanduiche frango.webp', descricao: 'Frango desfiado, cenoura, alface e maionese'},
+                    {nome: 'Natural de Atum', preco: 12.00, imagem: 'Imagens/sanduiche atum.avif', descricao: 'Atum, cenoura, alface e maionese'},
+                    {nome: 'Natural Vegetariano', preco: 11.00, imagem: 'Imagens/sanduiche vegetariano.jpg', descricao: 'Mix de legumes, ricota e patê de cenoura'}
                 ])">
-                    <img src="sanduiche.jpg" alt="Sanduíche Natural" class="item-imagem">
+                    <img src="Imagens/sanduiche.jpg" alt="Sanduíche Natural" class="item-imagem">
                     <div class="item-info">
                         <h3>Sanduíche Natural</h3>
                         <p>Opções saudáveis</p>
@@ -147,11 +147,11 @@
             
                 <!-- Misto Quente -->
                 <div class="item" onclick="abrirModalLanches('Misto Quente', [
-                    {nome: 'Misto Tradicional', preco: 8.00, imagem: 'misto 1.jpg', descricao: 'Queijo e presunto no pão francês'},
-                    {nome: 'Misto Especial', preco: 10.00, imagem: 'misto 2.jpeg', descricao: 'Queijo, presunto e oregano no pão integral'},
-                    {nome: 'Misto Duplo', preco: 12.00, imagem: 'misto 3.jpg', descricao: 'Duplo queijo e presunto no pão francês'}
+                    {nome: 'Misto Tradicional', preco: 8.00, imagem: 'Imagens/misto 1.jpg', descricao: 'Queijo e presunto no pão francês'},
+                    {nome: 'Misto Especial', preco: 10.00, imagem: 'Imagens/misto 2.jpeg', descricao: 'Queijo, presunto e oregano no pão integral'},
+                    {nome: 'Misto Duplo', preco: 12.00, imagem: 'Imagens/misto 3.jpg', descricao: 'Duplo queijo e presunto no pão francês'}
                 ])">
-                    <img src="misto.jpg" alt="Misto Quente" class="item-imagem">
+                    <img src="Imagens/misto.jpg" alt="Misto Quente" class="item-imagem">
                     <div class="item-info">
                         <h3>Misto Quente</h3>
                         <p>Diversos tipos</p>
@@ -163,11 +163,11 @@
             
                 <!-- Tapioca -->
                 <div class="item" onclick="abrirModalLanches('Tapioca', [
-                    {nome: 'Tapioca de Queijo', preco: 8.00, imagem: 'tapioca 1.jpg', descricao: 'Tapioca recheada com queijo coalho'},
-                    {nome: 'Tapioca de Frango', preco: 10.00, imagem: 'tapioca 2.jpg', descricao: 'Tapioca recheada com frango desfiado e queijo'},
-                    {nome: 'Tapioca Doce', preco: 9.00, imagem: 'tapioca.webp', descricao: 'Tapioca de morango e chocolate'}
+                    {nome: 'Tapioca de Queijo', preco: 8.00, imagem: 'Imagens/tapioca 1.jpg', descricao: 'Tapioca recheada com queijo coalho'},
+                    {nome: 'Tapioca de Frango', preco: 10.00, imagem: 'Imagens/tapioca 2.jpg', descricao: 'Tapioca recheada com frango desfiado e queijo'},
+                    {nome: 'Tapioca Doce', preco: 9.00, imagem: 'Imagens/tapioca.webp', descricao: 'Tapioca de morango e chocolate'}
                 ])">
-                    <img src="tapioca.webp" alt="Tapioca" class="item-imagem">
+                    <img src="Imagens/tapioca.webp" alt="Tapioca" class="item-imagem">
                     <div class="item-info">
                         <h3>Tapioca</h3>
                         <p>Salgadas e doces</p>
@@ -183,12 +183,12 @@
     
     <!-- Refrigerantes -->
     <div class="item" onclick="abrirModalBebidas('Refrigerante', [
-        {nome: 'Coca-Cola', preco: 5.00, imagem: 'refri 1.webp', descricao: 'Coca-Cola Original Lata 350ml'},
-        {nome: 'Guaraná', preco: 5.00, imagem: 'refri 2.png', descricao: 'Guaraná Antarctica Lata 350ml'},
-        {nome: 'Sprite', preco: 5.00, imagem: 'refri 3.jpg', descricao: 'Sprite Lata 350ml'},
-        {nome: 'Fanta', preco: 5.00, imagem: 'refri 4.webp', descricao: 'Fanta Laranja Lata 350ml'}
+        {nome: 'Coca-Cola', preco: 5.00, imagem: 'Imagens/refri 1.webp', descricao: 'Coca-Cola Original Lata 350ml'},
+        {nome: 'Guaraná', preco: 5.00, imagem: 'Imagens/refri 2.png', descricao: 'Guaraná Antarctica Lata 350ml'},
+        {nome: 'Sprite', preco: 5.00, imagem: 'Imagens/refri 3.jpg', descricao: 'Sprite Lata 350ml'},
+        {nome: 'Fanta', preco: 5.00, imagem: 'Imagens/refri 4.webp', descricao: 'Fanta Laranja Lata 350ml'}
     ])">
-        <img src="refri.png" alt="Refrigerante" class="item-imagem">
+        <img src="Imagens/refri.png" alt="Refrigerante" class="item-imagem">
         <div class="item-info">
             <h3>Refrigerante</h3>
             <p>Lata 350ml</p>
@@ -200,12 +200,12 @@
 
     <!-- Sucos -->
     <div class="item" onclick="abrirModalBebidas('Suco Natural', [
-        {nome: 'Suco de Laranja', preco: 8.00, imagem: 'suco 1.jpg', descricao: 'Suco natural de laranja espremida na hora'},
-        {nome: 'Suco de Morango', preco: 8.00, imagem: 'suco 2.jpg', descricao: 'Suco de morango natural com pedaços da fruta'},
-        {nome: 'Suco de Abacaxi', preco: 8.00, imagem: 'suco 3.jpg', descricao: 'Suco de abacaxi natural com hortelã'},
-        {nome: 'Suco de Maracujá', preco: 8.00, imagem: 'suco 4.webp', descricao: 'Suco de maracujá natural'}
+        {nome: 'Suco de Laranja', preco: 8.00, imagem: 'Imagens/suco 1.jpg', descricao: 'Suco natural de laranja espremida na hora'},
+        {nome: 'Suco de Morango', preco: 8.00, imagem: 'Imagens/suco 2.jpg', descricao: 'Suco de morango natural com pedaços da fruta'},
+        {nome: 'Suco de Abacaxi', preco: 8.00, imagem: 'Imagens/suco 3.jpg', descricao: 'Suco de abacaxi natural com hortelã'},
+        {nome: 'Suco de Maracujá', preco: 8.00, imagem: 'Imagens/suco 4.webp', descricao: 'Suco de maracujá natural'}
     ])">
-        <img src="suco.jpg" alt="Suco Natural" class="item-imagem">
+        <img src="Imagens/suco.jpg" alt="Suco Natural" class="item-imagem">
         <div class="item-info">
             <h3>Suco Natural</h3>
             <p>Copo 400ml</p>
@@ -217,10 +217,10 @@
 
     <!-- Água -->
     <div class="item" onclick="abrirModalBebidas('Água', [
-        {nome: 'Água Mineral', preco: 3.00, imagem: 'agua 1.jpg', descricao: 'Água mineral sem gás 500ml'},
-        {nome: 'Água com Gás', preco: 4.00, imagem: 'agua 2.jpeg', descricao: 'Água mineral com gás 500ml'}
+        {nome: 'Água Mineral', preco: 3.00, imagem: 'Imagens/agua 1.jpg', descricao: 'Água mineral sem gás 500ml'},
+        {nome: 'Água com Gás', preco: 4.00, imagem: 'Imagens/agua 2.jpeg', descricao: 'Água mineral com gás 500ml'}
     ])">
-        <img src="agua.jpg" alt="Água" class="item-imagem">
+        <img src="Imagens/agua.jpg" alt="Água" class="item-imagem">
         <div class="item-info">
             <h3>Água Mineral</h3>
             <p>Com e sem gás</p>
@@ -232,11 +232,11 @@
 
     <!-- Café -->
     <div class="item" onclick="abrirModalBebidas('Café', [
-        {nome: 'Café Expresso', preco: 4.00, imagem: 'cafe 1.png', descricao: 'Café expresso tradicional'},
-        {nome: 'Cappuccino', preco: 7.00, imagem: 'cafe 2.jpg', descricao: 'Cappuccino cremoso'},
-        {nome: 'Café com Leite', preco: 5.00, imagem: 'cafe 3.avif', descricao: 'Café com leite tradicional'}
+        {nome: 'Café Expresso', preco: 4.00, imagem: 'Imagens/cafe 1.png', descricao: 'Café expresso tradicional'},
+        {nome: 'Cappuccino', preco: 7.00, imagem: 'Imagens/cafe 2.jpg', descricao: 'Cappuccino cremoso'},
+        {nome: 'Café com Leite', preco: 5.00, imagem: 'Imagens/cafe 3.avif', descricao: 'Café com leite tradicional'}
     ])">
-        <img src="cafe.jpg" alt="Café" class="item-imagem">
+        <img src="Imagens/cafe.jpg" alt="Café" class="item-imagem">
         <div class="item-info">
             <h3>Café</h3>
             <p>Diversas opções</p>
@@ -253,10 +253,10 @@
     
     <!-- Pudim -->
     <div class="item" onclick="abrirModalSobremesas('Pudim', [
-        {nome: 'Pudim de Leite', preco: 8.90, imagem: 'pudim.avif', descricao: 'Delicioso pudim de leite condensado com calda caramelizada'},
-        {nome: 'Pudim de Chocolate', preco: 9.90, imagem: 'pudim 2.webp', descricao :' Pudim de chocolate com cereja'}, 
+        {nome: 'Pudim de Leite', preco: 8.90, imagem: 'Imagens/pudim.avif', descricao: 'Delicioso pudim de leite condensado com calda caramelizada'},
+        {nome: 'Pudim de Chocolate', preco: 9.90, imagem: 'Imagens/pudim 2.webp', descricao :' Pudim de chocolate com cereja'}
     ])">
-        <img src="pudim.avif" alt="Pudim" class="item-imagem">
+        <img src="Imagens/pudim.avif" alt="Pudim" class="item-imagem">
         <div class="item-info">
             <h3>Pudim</h3>
             <p>Tradicional ou chocolate</p>
@@ -268,11 +268,11 @@
 
     <!-- Bolo -->
     <div class="item" onclick="abrirModalSobremesas('Bolo', [
-        {nome: 'Bolo de Chocolate', preco: 15.00, imagem: 'bolo 1.webp', descricao: 'Fatia de bolo de chocolate'},
-        {nome: 'Bolo de Cenoura', preco: 7.00, imagem: 'bolo 2.jpg.crdownload', descricao: 'Fatia de bolo de cenoura com cobertura'},
-        {nome: 'Bolo Red Velvet', preco: 17.00, imagem: 'bolo 3.jpg', descricao: 'Fatia de bolo Red Velvet'}
+        {nome: 'Bolo de Chocolate', preco: 15.00, imagem: 'Imagens/bolo 1.webp', descricao: 'Fatia de bolo de chocolate'},
+        {nome: 'Bolo de Cenoura', preco: 7.00, imagem: 'Imagens/bolo 2.jpg.crdownload', descricao: 'Fatia de bolo de cenoura com cobertura'},
+        {nome: 'Bolo Red Velvet', preco: 17.00, imagem: 'Imagens/bolo 3.jpg', descricao: 'Fatia de bolo Red Velvet'}
     ])">
-        <img src="bolo.jpg" alt="Bolo" class="item-imagem">
+        <img src="Imagens/bolo.jpg" alt="Bolo" class="item-imagem">
         <div class="item-info">
             <h3>Bolos</h3>
             <p>Diversos sabores</p>
@@ -284,11 +284,11 @@
 
     <!-- Sorvete -->
     <div class="item" onclick="abrirModalSobremesas('Sorvete', [
-        {nome: 'Sorvete de Chocolate', preco: 6.00, imagem: 'sorvetes 1.jpg', descricao: 'Bola de sorvete de chocolate'},
-        {nome: 'Sorvete de Morango', preco: 6.00, imagem: 'sorvetes 2.jpeg', descricao: 'Bola de sorvete de morango'},
-        {nome: 'Sorvete de Creme', preco: 6.00, imagem: 'sorvetes 3.jpeg', descricao: 'Bola de sorvete de creme'}
+        {nome: 'Sorvete de Chocolate', preco: 6.00, imagem: 'Imagens/sorvetes 1.jpg', descricao: 'Bola de sorvete de chocolate'},
+        {nome: 'Sorvete de Morango', preco: 6.00, imagem: 'Imagens/sorvetes 2.jpeg', descricao: 'Bola de sorvete de morango'},
+        {nome: 'Sorvete de Creme', preco: 6.00, imagem: 'Imagens/sorvetes 3.jpeg', descricao: 'Bola de sorvete de creme'}
     ])">
-        <img src="sorvetes.jpg" alt="Sorvete" class="item-imagem">
+        <img src="Imagens/sorvetes.jpg" alt="Sorvete" class="item-imagem">
         <div class="item-info">
             <h3>Sorvetes</h3>
             <p>Diversos sabores</p>
@@ -300,11 +300,11 @@
 
     <!-- Açaí -->
     <div class="item" onclick="abrirModalSobremesas('Açaí', [
-        {nome: 'Açaí 300ml', preco: 12.00, imagem: 'acai 1.png', descricao: 'Açaí com granola e banana'},
-        {nome: 'Açaí 500ml', preco: 23.00, imagem: 'acai 2.avif', descricao: 'Açaí com granola, banana e leite condensado'},
-        {nome: 'Açaí Especial', preco: 28.00, imagem: 'acai 3.webp', descricao: 'Açaí com 600 ml de frutas variadas e complementos'}
+        {nome: 'Açaí 300ml', preco: 12.00, imagem: 'Imagens/acai 1.png', descricao: 'Açaí com granola e banana'},
+        {nome: 'Açaí 500ml', preco: 23.00, imagem: 'Imagens/acai 2.avif', descricao: 'Açaí com granola, banana e leite condensado'},
+        {nome: 'Açaí Especial', preco: 28.00, imagem: 'Imagens/acai 3.webp', descricao: 'Açaí com 600 ml de frutas variadas e complementos'}
     ])">
-        <img src="acai.jpg" alt="Açaí" class="item-imagem">
+        <img src="Imagens/acai.jpg" alt="Açaí" class="item-imagem">
         <div class="item-info">
             <h3>Açaí</h3>
             <p>Diversos tamanhos e complementos</p>
